@@ -5,13 +5,13 @@ using UnityEngine;
 public class EndPoint : MonoBehaviour
 {
     public Stopwatch sw;
-
+    public GameManager gameManager;
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.name == "Player")
         {
             //If the GameObject's name matches the one you suggest, output this message in the console
-            Debug.Log("yasandi bisi");
             sw.StopStopwatch();
+            gameManager.CompleteLevel();
         }
 
     }

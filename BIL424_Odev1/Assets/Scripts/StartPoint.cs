@@ -10,7 +10,6 @@ public class StartPoint : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             //If the GameObject's name matches the one you suggest, output this message in the console
-            Debug.Log("yasandi bisi");
             sw.StartStopwatch();
         }
 
