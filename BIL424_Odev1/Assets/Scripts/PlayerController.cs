@@ -41,4 +41,12 @@ public class PlayerController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity*Time.deltaTime);
     }
+
+    private void OnCollisionEnter(Collision other) {
+        if (other.gameObject.name == "StartPoint")
+        {
+            //If the GameObject's name matches the one you suggest, output this message in the console
+            Debug.Log("yasandi bisi");
+        }
+    }
 }
